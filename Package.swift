@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "GalenitTensorFlow",
-            targets: ["TensorFlowLite"]
+            targets: ["TensorFlowLite", "TensorFlowLiteC"]
         ),
     ],
     targets: [
