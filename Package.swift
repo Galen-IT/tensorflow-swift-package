@@ -11,22 +11,13 @@ let package = Package(
     products: [
         .library(
             name: "GalenitBinah",
-            targets: ["GalenitBinahObjc"]),
+            targets: ["BinahAI"]),
     ],
     targets: [
-        .target(
-            name: "GalenitBinahObjc",
-            dependencies: ["BinahAI"],
-            path: "Sources1",
-            publicHeadersPath: "Internal",
-            cSettings: [
-                  .headerSearchPath("Internal"),
-               ]
-        ),
        .binaryTarget(
             name: "BinahAI",
             url: "https://github.com/Galen-IT/FlowVit_PublicSDKs_iOS/releases/download/v1.0.0/BinahAI.xcframework.zip",
-            checksum: "5c4f13911f8376df9b99e45a8dec622597b2be6d6201e4f4121c6b8c0f2d2105"
+            checksum: "adb9ed84c3b7c2284db48bfabad84f10ab3d71ba176ec920c5900eeb45076ad7"
         )
     ]
 )
