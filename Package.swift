@@ -11,12 +11,12 @@ let package = Package(
     products: [
         .library(
             name: "GalenitTensorFlow",
-            targets: ["TensorFlowLiteSwift"]
+            targets: ["TensorFlowLite"]
         ),
     ],
     targets: [
         .target(
-            name: "TensorFlowLiteSwift",
+            name: "TensorFlowLite",
             dependencies: ["TensorFlowLiteCCombined"],
             path: "TensorFlowLiteSwift"
         ),
