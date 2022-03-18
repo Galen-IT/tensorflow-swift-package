@@ -11,13 +11,17 @@ let package = Package(
     products: [
         .library(
             name: "GalenitBinah",
-            targets: ["GalenitBinah"]),
+            targets: ["GalenitBinahObjc"]),
     ],
     targets: [
         .target(
-            name: "GalenitBinah",
+            name: "GalenitBinahObjc",
             dependencies: ["BinahAI"],
-            path: "Sources"
+            path: "Sources1",
+            publicHeadersPath: "Internal",
+            cSettings: [
+                  .headerSearchPath("Internal"),
+               ]
         ),
        .binaryTarget(
             name: "BinahAI",
