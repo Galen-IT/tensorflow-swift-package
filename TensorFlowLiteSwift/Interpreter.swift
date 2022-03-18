@@ -12,7 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import TensorFlowLiteCCombined
+import Foundation
+import TensorFlowLiteC
 
 #if os(Linux)
   import SwiftGlibc

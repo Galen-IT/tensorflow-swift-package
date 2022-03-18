@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import TensorFlowLiteCCombined
+import TensorFlowLiteC
 
 /// A TensorFlow Lite model used by the `Interpreter` to perform inference.
 final class Model {

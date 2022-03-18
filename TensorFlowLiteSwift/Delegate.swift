@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import TensorFlowLiteCCombined
+import TensorFlowLiteC
 
 /// A delegate that the `Interpreter` uses to perform TensorFlow Lite model computations.
 public protocol Delegate: class {
