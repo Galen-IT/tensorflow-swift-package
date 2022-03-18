@@ -19,6 +19,10 @@ let package = Package(
             name: "TensorFlowLite",
             dependencies: ["TensorFlowLiteC"],
             path: "TensorFlowLiteSwift"
+            linkerSettings: [
+                .linkedFramework("Metal"),
+                .linkedLibrary("c++")
+            ]
         ),
 //        .target(
 //            name: "TensorFlowLiteCCombined",
