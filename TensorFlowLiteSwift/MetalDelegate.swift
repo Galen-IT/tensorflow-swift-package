@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/*
+
 import TensorFlowLiteCMetal
 
 /// A delegate that uses the `Metal` framework for performing TensorFlow Lite graph operations with
@@ -98,5 +98,3 @@ public enum ThreadWaitType: Equatable, Hashable {
     }
   }
 }
-
-*/
