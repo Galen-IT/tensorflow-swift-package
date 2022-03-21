@@ -21,7 +21,7 @@ let package = Package(
             path: "TensorFlowLiteSwift",
             linkerSettings: [
                 .linkedFramework("Metal"),
-                .linkedFramework("CoreML")
+                .linkedFramework("CoreML"),
                 .linkedLibrary("c++")
             ]
         ),
