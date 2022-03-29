@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import TensorFlowLiteC
+@_implementationOnly import TensorFlowLiteC
 
 /// TensorFlow Lite runtime values.
 public enum Runtime {

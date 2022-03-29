@@ -22,7 +22,8 @@ let package = Package(
             linkerSettings: [
                 .linkedFramework("Metal"),
                 .linkedFramework("CoreML"),
-                .linkedLibrary("c++")
+                .linkedLibrary("c++"),
+                .linkedFramework("Foundation")
             ]
         ),
         .binaryTarget(
