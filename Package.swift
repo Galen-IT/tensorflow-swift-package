@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "galenit-tensorflow",
+    name: "galenit-tensorflow-swift",
     platforms: [
         .iOS(.v14)
     ],
@@ -14,16 +14,17 @@ let package = Package(
             targets: ["TensorFlowLite"]
         ),
     ],
+    dependencies: [
+        .package(url: "", from: "")
+    ],
     targets: [
         .target(
             name: "TensorFlowLite",
-            dependencies: ["TensorFlowLiteC", "TensorFlowLiteCCoreML", "TensorFlowLiteCMetal"],
-            path: "TensorFlowLiteSwift",
+            dependencies: [
+                .product(name: "", package: "")
+            ],
             linkerSettings: [
-                .linkedFramework("Metal"),
-                .linkedFramework("CoreML"),
                 .linkedLibrary("c++"),
-                .linkedFramework("Foundation")
             ]
         ),
         .binaryTarget(
@@ -31,15 +32,5 @@ let package = Package(
             url: "https://github.com/galen-it/tensorflow-ios-package/releases/download/2.7.0/TensorFlowLiteC.xcframework.zip",
             checksum: "5f90d1c0b4788b715d9778011d9d513ac22a8bd3d74b7a1fa236ab33242288f7"
         ),
-        .binaryTarget(
-            name: "TensorFlowLiteCCoreML",
-            url: "https://github.com/galen-it/tensorflow-ios-package/releases/download/2.7.0/TensorFlowLiteCCoreML.xcframework.zip",
-            checksum: "931d0a7b03d2f862685ddb52ceaa9f79877d749470193d9520bda209b9e78a0b"
-        ),
-        .binaryTarget(
-            name: "TensorFlowLiteCMetal",
-            url: "https://github.com/galen-it/tensorflow-ios-package/releases/download/2.7.0/TensorFlowLiteCMetal.xcframework.zip",
-            checksum: "7c7be5b84e99bd7a834d998294c7c950c2e838c3bf7cbfaea99a9415c396b86f"
-        )
     ]
 )
