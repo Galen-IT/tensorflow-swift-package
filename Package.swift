@@ -10,27 +10,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "GalenitTensorFlow",
-            targets: ["TensorFlowLite"]
+            name: "GalenitTensorFlowSwift",
+            targets: ["GalenitTensorFlow"]
         ),
-    ],
-    dependencies: [
-        .package(url: "", from: "")
     ],
     targets: [
-        .target(
-            name: "TensorFlowLite",
-            dependencies: [
-                .product(name: "", package: "")
-            ],
-            linkerSettings: [
-                .linkedLibrary("c++"),
-            ]
-        ),
         .binaryTarget(
-            name: "TensorFlowLiteC",
-            url: "https://github.com/galen-it/tensorflow-ios-package/releases/download/2.7.0/TensorFlowLiteC.xcframework.zip",
-            checksum: "5f90d1c0b4788b715d9778011d9d513ac22a8bd3d74b7a1fa236ab33242288f7"
+            name: "GalenitTensorFlow",
+            url: "https://github.com/galen-it/tensorflow-swift-package/releases/download/2.7.0/GalenitTensorFlow.xcframework.zip",
+            checksum: "1a9420f9fa40a65b0bf203c5a72011b733d085e70b06bd539f1a12b7f96e6dce"
         ),
     ]
 )
