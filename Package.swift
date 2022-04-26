@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GalenitTensorFlow",
-            url: "https://github.com/galen-it/tensorflow-swift-package/releases/download/2.7.10/GalenitTensorFlow.xcframework.zip",
-            checksum: "ba7f89245ac2719bebac0eb3901ea6006da7163a252992c0b1f39565945d1fe1"
+            url: "https://github.com/galen-it/tensorflow-swift-package/releases/download/2.7.1001/GalenitTensorFlow.xcframework.zip",
+            checksum: "ae0ba8ea44ca086b44776e4f4e9789ad5870f67139ccc63766a889ce17872e59"
         ),
     ]
 )
